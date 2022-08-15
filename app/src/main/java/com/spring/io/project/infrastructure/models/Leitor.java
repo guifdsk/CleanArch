@@ -2,8 +2,11 @@ package com.spring.io.project.infrastructure.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -14,10 +17,13 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "tb01_leitor")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Leitor {
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Type(type = "uuid-char")
     @Column(name = "codigo_leitor")
     private UUID codigoLeitor;
 
@@ -43,10 +49,4 @@ public class Leitor {
 
     @Column(name = "data_atualizacao")
     private LocalDateTime dataAtualizacao;
-
-//    @OneToOne(mappedBy="leitor", cascade = CascadeType.ALL)
-//    private Contato contato;
-//
-//    @OneToMany(mappedBy="leitor", cascade = CascadeType.ALL)
-//    private List<Advertencia> advertencia;
 }

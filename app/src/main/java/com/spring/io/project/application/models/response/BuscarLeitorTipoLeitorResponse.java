@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TipoLeitorResponse {
-    @JsonProperty("codigo_tipo_leitor")
+public class BuscarLeitorTipoLeitorResponse {
+    @JsonProperty("codigo_tipo")
     private String codigoTipo;
 
     @JsonProperty("tipo_leitor")
@@ -21,6 +21,6 @@ public class TipoLeitorResponse {
     @JsonProperty("prazo_maximo_dias")
     private String prazoMaximoDias;
 
-    @JsonProperty("quantidade_liros")
+    @JsonProperty("quantidade_livros")
     private String quantidadeLivros;
 }

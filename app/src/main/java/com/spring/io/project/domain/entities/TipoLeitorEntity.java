@@ -1,13 +1,13 @@
 package com.spring.io.project.domain.entities;
 
 public class TipoLeitorEntity {
-    private String codigoTipo;
+    private Integer codigoTipo;
     private String tipoLeitor;
     private String tipoDescricao;
     private String prazoMaximoDias;
     private String quantidadeLivros;
 
-    public String getCodigoTipo() {
+    public Integer getCodigoTipo() {
         return codigoTipo;
     }
 
@@ -27,7 +27,7 @@ public class TipoLeitorEntity {
         return quantidadeLivros;
     }
 
-    public TipoLeitorEntity(String codigoTipo, String tipoLeitor, String tipoDescricao, String prazoMaximoDias, String quantidadeLivros) {
+    public TipoLeitorEntity(Integer codigoTipo, String tipoLeitor, String tipoDescricao, String prazoMaximoDias, String quantidadeLivros) {
         this.codigoTipo = codigoTipo;
         this.tipoLeitor = tipoLeitor;
         this.tipoDescricao = tipoDescricao;

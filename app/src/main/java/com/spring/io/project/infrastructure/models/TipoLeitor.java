@@ -26,7 +26,4 @@ public class TipoLeitor {
 
     @Column(name = "quantidade_livros")
     private String quantidadeLivros;
-
-//    @OneToMany(mappedBy="tipo")
-//    private List<Leitor> leitor;
 }

@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SituacaoResponse {
+public class BuscarLeitorSituacaoResponse {
     @JsonProperty("codigo_situacao")
     private Integer codigoSituacao;
 

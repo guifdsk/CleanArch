@@ -1,8 +1,6 @@
 package com.spring.io.project.application.models.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.spring.io.project.domain.entities.SituacaoEntity;
-import com.spring.io.project.domain.entities.TipoLeitorEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +12,7 @@ import java.util.UUID;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BuscarLeitoresResponse {
+public class BuscarLeitorResponse {
     @JsonProperty("codigo_leitor")
     private UUID codigoLeitor;
 
@@ -25,17 +23,11 @@ public class BuscarLeitoresResponse {
     private String matriculaLeitor;
 
     @JsonProperty("situacao_leitor")
-    private SituacaoResponse situacao;
+    private Integer situacao;
 
     @JsonProperty("tipo_leitor")
-    private TipoLeitorResponse tipo;
+    private Integer tipo;
 
     @JsonProperty("data_cadastro")
     private LocalDate dataCadastro;
-
-    @JsonProperty("data_exclusao")
-    private LocalDate dataExclusao;
-
-    @JsonProperty("data_atualizacao")
-    private LocalDateTime dataAtualizacao;
 }

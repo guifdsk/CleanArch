@@ -17,7 +17,4 @@ public class Situacao {
 
     @Column(name = "descricao_situacao")
     private String descricaoSitucao;
-
-//    @OneToMany(mappedBy="situacao")
-//    private List<Leitor> leitor;
 }

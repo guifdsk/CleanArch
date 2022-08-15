@@ -7,8 +7,6 @@ import org.mapstruct.Mapper;
 import java.util.List;
 
 @Mapper(componentModel = "spring")
-public interface BuscarLeitoresDataProviderMapper {
-
-    List<LeitorEntity> mapearBuscarLeitoresDataproviderMapper(List<Leitor> leitor);
-
+public interface BuscarLeitorDataProviderMapper {
+    List<LeitorEntity> mapearBuscarLeitorModelParaEntityDataproviderMapper(List<Leitor> leitor);
 }
