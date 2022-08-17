@@ -12,7 +12,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class BuscarLeitorProvider implements BuscarLeitorGateway {
+public class BuscarLeitorDataProvider implements BuscarLeitorGateway {
 
     private final BuscarLeitorRepository repository;
     private final BuscarLeitorDataProviderMapper mapper;
